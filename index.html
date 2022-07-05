@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULÁRIO</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="page">
+    <header>
+    <div class="title">
+      <h1>MENTORIA</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </div>
+    </header>
+
+    <form id="my-form">
+   
+      <fieldset> <!--grouping 1-->
+
+        <legend>INFORMAÇÕES PESSOAIS</legend>
+
+        <div class="line"></div>
+
+          <div class="input-box-name">
+            <div class="name-box"> <!--box name-->
+            <label for="name">Nome</label>
+            <input type="text" name="Nome" id="name" required />
+          </div>
+          <div class="surname-box">
+            <label for="surname">Sobrenome</label> <!--box surname-->
+            <input type="text" name="Sobrenome" id="surname" required />
+          </div>
+        </div>
+        <div class="input-box"> <!--box e-mail-->
+          <label for="email">E-mail <span>(digite um email válido)</span></label>
+          <input type="email" name="E-mail" id="email" required />
+        </div>
+        <div class="input-box"> <!--box password-->
+          <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+          <input type="password" name="Senha" id="password" minlength="6" required />
+        </div>
+       
+      </fieldset>
+
+      <fieldset> <!--grouping 2-->
+
+        <legend>INFORMAÇÕES DO MENTOR</legend>
+
+        <div class="line"></div>
+      
+        <div class="input-box"> <!-- box mentor-name -->
+          <label for="mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+          <input type="text" name="Nome do seu mentor" id="mentor-name" />
+        </div>
+
+      </fieldset>
+
+      <fieldset> <!--grouping 3-->
+
+        <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+
+        <div class="line"></div>
+        
+        <div class="input-box"> <!--first mentoring-->
+
+          <h2>PRIMEIRA MENTORIA</h2>
+          <div class="date-and-time-box">
+            <div class="input-box"> <!--box date-->
+              <label for="date-one">Data <span>(DD/MM/AAAA)</span></label>
+              <input class="date" type="date" name="" id="date-one" required />
+            </div>
+            <div class="input-box"> <!--box time-->
+              <label for="start-time-1">Das</label>
+              <input class="time" type="time" name="" id="start-time-1" required />
+            </div>
+            <div class="input-box"> <!--box time-->
+              <label for="end-time-1">Até</label>
+              <input class="time" type="time" name="" id="end-time-1" required />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="input-box"> <!--second mentoring-->
+
+          <h2>SEGUNDA MENTORIA</h2>
+          <div class="date-and-time-box">
+            <div class="input-box"> <!--box date-->
+              <label for="date-two">Data <span>(DD/MM/AAAA)</span></label>
+              <input class="date" type="date" name="" id="date-two" required />
+            </div>
+            <div class="input-box"> <!--box time-->
+              <label for="start-time-2">Das</label>
+              <input class="time" type="time" name="" id="start-time-2" required />
+            </div>
+            <div class="input-box"> <!--box time-->
+              <label for="end-time-2">Até</label>
+              <input class="time" type="time" name="" id="end-time-2" required />
+            </div>
+          </div>
+        
+        </div>
+        
+      </fieldset>
+
+    </form>
+
+   <footer>
+    <button>
+        <input form="my-form" class="btn-save" type="submit" value="SALVAR">
+    </button>
+    </footer>
+  </div>
+
+</body>
+</html>
